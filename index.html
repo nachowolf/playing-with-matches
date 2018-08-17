@@ -5,16 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Playing with matches</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <link rel="stylesheet" href="./skeleton.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 
        
 </head>
 <body>
   <div class="container">
     <div class="numberBlock">
-       <h2>2</h2>
+       <h2 id="rand">0</h2>
     </div>
   </div>
+  <button onclick="random()">Try it</button>
+  <script type="text/javascript">
+  function random() {
+ var num = Math.random()* Math.floor(9);
+
+  document.getElementById('rand').innerHTML = num.toFixed(0)
+  
+}
+  </script>
 </body>
 </html>
