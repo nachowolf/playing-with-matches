@@ -12,17 +12,12 @@
 <body>
   <div class="container">
     <div class="numberBlock">
-       <h2 id="rand">0</h2>
+       <h2 class="rand">0</h2>
     </div>
   </div>
-  <button onclick="random()">Try it</button>
-  <script type="text/javascript">
-  function random() {
- var num = Math.random()* Math.floor(9);
+  <!-- <button class="butt">Try it</button> -->
 
-  document.getElementById('rand').innerHTML = num.toFixed(0)
-  
-}
-  </script>
+  <script src="./index-dom.js"></script>
+   
 </body>
 </html>
